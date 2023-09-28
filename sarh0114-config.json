@@ -1,0 +1,48 @@
+{
+  "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+  "title": "Search and Rescue Helicopter Statistics",
+  "description": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)",
+  "creator": "https://www.gov.uk/government/organisations/maritime-and-coastguard-agency",
+  "publisher": "https://www.gov.uk/government/organisations/maritime-and-coastguard-agency",
+  "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "keywords": [
+    "rescue",
+    "helicopter",
+    "safety",
+    "Search" 
+  ],
+  "columns": {
+    "Year": {
+        "type": "dimension"
+     },
+    "Make": false,
+    "Quarter": false,
+    "Tasking Location Type": {
+      "type": "dimension"
+   },
+    "Period": {
+      "from_template": "government-quarter"
+    },
+    "Location": false,
+    "ONScode": {
+      "from_template": "statistical-geography"
+    },
+    "Value": {
+      "type": "observations",
+      "measure": {
+        "label": "UK Search and Rescue Helicopter Taskings",
+        "description": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base: April 2017 to March 2022.",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "data_type": "integer",
+      "unit": {
+        "label": "Number",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "obsStatus": {
+      "from_template": "observation-status",
+      "describes_observations": "Value"
+    }
+  }
+}
