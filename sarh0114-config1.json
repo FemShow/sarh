@@ -1,0 +1,114 @@
+{
+  "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+  "title": "Search and Rescue Helicopter Statistics",
+  "description": "All registered vehicles in Great Britain; from 1994 Quarter 4 (end December)",
+  "creator": "https://www.gov.uk/government/organisations/maritime-and-coastguard-agency",
+  "publisher": "https://www.gov.uk/government/organisations/maritime-and-coastguard-agency",
+  "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "keywords": [
+    "rescue",
+    "helicopter",
+    "safety",
+    "Search" 
+  ],
+  "columns": {
+    "Year": false,
+    "Quarter": false,
+    "Location": false,
+    "Period": {
+      "from_template": "government-quarter"
+    },
+    "ONScode": {
+      "from_template": "statistical-geography"
+    },
+    "Beach/Cliff": {
+      "type": "observations",
+      "measure": {
+        "label": "UK Search and Rescue Helicopter Taskings",
+        "description": "UK Civilian Search and Rescue Helicopter Beach/Cliff rescues by base.",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "data_type": "integer",
+      "unit": {
+        "label": "Number",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Mountain": {
+      "type": "observations",
+      "measure": {
+        "label": "UK Search and Rescue Helicopter Taskings",
+        "description": "UK Civilian Search and Rescue Helicopter Mountain rescues by Base.",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "data_type": "integer",
+      "unit": {
+        "label": "Number",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Other": {
+      "type": "observations",
+      "measure": {
+        "label": "UK Search and Rescue Helicopter Taskings",
+        "description": "Other types of UK Civilian Search and Rescue Helicopter Taskings by base.",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "data_type": "integer",
+      "unit": {
+        "label": "Number",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Total": {
+      "type": "observations",
+      "measure": {
+        "label": "UK Search and Rescue Helicopter Taskings",
+        "description": "Total number of UK Civilian Search and Rescue Helicopter Taskings by Base.",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "data_type": "integer",
+      "unit": {
+        "label": "Number",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "Vessel": {
+      "type": "observations",
+      "measure": {
+        "label": "UK Search and Rescue Helicopter Taskings",
+        "description": "UK Civilian Search and Rescue Helicopter on Vessels by base.",
+        "from_existing": "https://purl.org/csv-cubed/resources/measures#scale"
+      },
+      "data_type": "integer",
+      "unit": {
+        "label": "Number",
+        "from_existing": "http://qudt.org/vocab/unit/NUM"
+      }
+    },
+    "obsStatus1": {
+      "from_template": "observation-status",
+      "describes_observations": "ONScode"
+    },
+    "obsStatus2": {
+      "from_template": "observation-status",
+      "describes_observations": "Beach/Cliff"
+    },
+    "obsStatus3": {
+      "from_template": "observation-status",
+      "describes_observations": "Mountain"
+    },
+    "obsStatus4": {
+      "from_template": "observation-status",
+      "describes_observations": "Other"
+    },
+    "obsStatus5": {
+      "from_template": "observation-status",
+      "describes_observations": "Total"
+    },
+    "obsStatus6": {
+      "from_template": "observation-status",
+      "describes_observations": "Vessel"
+    }
+  }
+}
