@@ -1,0 +1,1991 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset",
+    "tables": [
+        {
+            "url": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Year",
+                        "name": "year",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Quarter",
+                        "name": "quarter",
+                        "suppressOutput": true
+                    },
+                    {
+                        "titles": "Period",
+                        "name": "period",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Tasking Location Type",
+                        "name": "tasking_location_type",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Caernarfon",
+                        "name": "caernarfon",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/caernarfon",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Humberside",
+                        "name": "humberside",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/humberside",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Inverness",
+                        "name": "inverness",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/inverness",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Lee On Solent",
+                        "name": "lee_on_solent",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lee-on-solent",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Lydd",
+                        "name": "lydd",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lydd",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Newquay",
+                        "name": "newquay",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/newquay",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Portland",
+                        "name": "portland",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/portland",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Portland-obsStatus",
+                        "name": "portland_obsstatus",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status/{+portland_obsstatus}",
+                        "required": false
+                    },
+                    {
+                        "titles": "Prestwick",
+                        "name": "prestwick",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/prestwick",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "St Athan",
+                        "name": "st_athan",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/st-athan",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Stornoway",
+                        "name": "stornoway",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/stornoway",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Sumburgh",
+                        "name": "sumburgh",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/sumburgh",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Total",
+                        "name": "total",
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/total",
+                        "datatype": "integer",
+                        "required": false
+                    },
+                    {
+                        "titles": "Revisions",
+                        "name": "revisions",
+                        "suppressOutput": true
+                    },
+                    {
+                        "name": "virt_slice",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Slice"
+                    },
+                    {
+                        "name": "virt_slice_structure",
+                        "virtual": true,
+                        "propertyUrl": "qb:sliceStructure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#slice/cross-measures"
+                    },
+                    {
+                        "name": "virt_obs_caernarfon",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon"
+                    },
+                    {
+                        "name": "virt_obs_caernarfon_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/caernarfon"
+                    },
+                    {
+                        "name": "virt_obs_caernarfon_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_caernarfon_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_caernarfon_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_caernarfon_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_caernarfon",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@caernarfon",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_humberside",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside"
+                    },
+                    {
+                        "name": "virt_obs_humberside_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/humberside"
+                    },
+                    {
+                        "name": "virt_obs_humberside_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_humberside_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_humberside_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_humberside_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_humberside",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@humberside",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_inverness",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness"
+                    },
+                    {
+                        "name": "virt_obs_inverness_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/inverness"
+                    },
+                    {
+                        "name": "virt_obs_inverness_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_inverness_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_inverness_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_inverness_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_inverness",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@inverness",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_lee_on_solent",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent"
+                    },
+                    {
+                        "name": "virt_obs_lee_on_solent_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lee-on-solent"
+                    },
+                    {
+                        "name": "virt_obs_lee_on_solent_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_lee_on_solent_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_lee_on_solent_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_lee_on_solent_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_lee_on_solent",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lee-on-solent",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_lydd",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd"
+                    },
+                    {
+                        "name": "virt_obs_lydd_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lydd"
+                    },
+                    {
+                        "name": "virt_obs_lydd_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_lydd_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_lydd_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_lydd_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_lydd",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@lydd",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_newquay",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay"
+                    },
+                    {
+                        "name": "virt_obs_newquay_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/newquay"
+                    },
+                    {
+                        "name": "virt_obs_newquay_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_newquay_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_newquay_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_newquay_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_newquay",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@newquay",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_portland",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland"
+                    },
+                    {
+                        "name": "virt_obs_portland_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/portland"
+                    },
+                    {
+                        "name": "virt_obs_portland_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_portland_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_portland_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_portland_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_portland",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@portland",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_prestwick",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick"
+                    },
+                    {
+                        "name": "virt_obs_prestwick_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/prestwick"
+                    },
+                    {
+                        "name": "virt_obs_prestwick_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_prestwick_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_prestwick_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_prestwick_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_prestwick",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@prestwick",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_st_athan",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan"
+                    },
+                    {
+                        "name": "virt_obs_st_athan_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/st-athan"
+                    },
+                    {
+                        "name": "virt_obs_st_athan_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_st_athan_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_st_athan_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_st_athan_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_st_athan",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@st-athan",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_stornoway",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway"
+                    },
+                    {
+                        "name": "virt_obs_stornoway_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/stornoway"
+                    },
+                    {
+                        "name": "virt_obs_stornoway_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_stornoway_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_stornoway_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_stornoway_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_stornoway",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@stornoway",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_sumburgh",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh"
+                    },
+                    {
+                        "name": "virt_obs_sumburgh_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/sumburgh"
+                    },
+                    {
+                        "name": "virt_obs_sumburgh_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_sumburgh_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_sumburgh_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_sumburgh_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_sumburgh",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@sumburgh",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    },
+                    {
+                        "name": "virt_obs_total",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total"
+                    },
+                    {
+                        "name": "virt_obs_total_meas",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/total"
+                    },
+                    {
+                        "name": "virt_obs_total_unit",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_total_period",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+                        "valueUrl": "government-quarter.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_total_tasking_location_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+                        "valueUrl": "tasking-location-type.csv#{+tasking_location_type}"
+                    },
+                    {
+                        "name": "virt_obs_total_type",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_total",
+                        "virtual": true,
+                        "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#obs/{period},{tasking_location_type}@total",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "period",
+                        "reference": {
+                            "resource": "government-quarter.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "tasking_location_type",
+                        "reference": {
+                            "resource": "tasking-location-type.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "period",
+                    "tasking_location_type"
+                ],
+                "aboutUrl": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#slice/{period},{tasking_location_type}"
+            }
+        },
+        {
+            "url": "government-quarter.csv",
+            "tableSchema": "government-quarter.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "tasking-location-type.csv",
+            "tableSchema": "tasking-location-type.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/unit",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/portland",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/portland"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/portland"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 17
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "government-quarter.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Government Quarter"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#class/government-quarter"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/prov#Activity"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.4"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#slice/cross-measures",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#SliceKey"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/caernarfon",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Caernarfon taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Caernarfon"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/sumburgh",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Sumburgh taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Sumburgh"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/newquay",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/newquay"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/newquay"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 15
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/prestwick",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/prestwick"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/prestwick"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 20
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lee-on-solent",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Lee On Solent taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lee On Solent"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/lee-on-solent",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lee-on-solent"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lee-on-solent"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 11
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/government-quarter",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status",
+            "@type": [
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Observation Status"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lydd",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Lydd taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Lydd"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "tasking-location-type.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Tasking Location Type"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#class/tasking-location-type"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/total",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/total"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/total"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 28
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 12
+                },
+                {
+                    "@value": 14
+                },
+                {
+                    "@value": 19
+                },
+                {
+                    "@value": 8
+                },
+                {
+                    "@value": 16
+                },
+                {
+                    "@value": 21
+                },
+                {
+                    "@value": 25
+                },
+                {
+                    "@value": 27
+                },
+                {
+                    "@value": 3
+                },
+                {
+                    "@value": 10
+                },
+                {
+                    "@value": 23
+                },
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/caernarfon",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/caernarfon"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/caernarfon"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#class/government-quarter",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/inverness",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/inverness"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/inverness"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#class/tasking-location-type",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/total",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Total number of taskings in all bases"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Total"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/st-athan",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/st-athan"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/st-athan"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 22
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DataStructureDefinition"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/lydd"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/lee-on-solent"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/measure-type"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/observation-status"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/stornoway"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/unit"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/sumburgh"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/portland"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/inverness"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/prestwick"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/st-athan"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/caernarfon"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/humberside"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/tasking-location-type"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/total"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/newquay"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/government-quarter"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/inverness"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/total"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/newquay"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/st-athan"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/government-quarter"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lee-on-solent"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/sumburgh"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/stornoway"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lydd"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/prestwick"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/portland"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/caernarfon"
+                },
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/humberside"
+                }
+            ],
+            "http://purl.org/linked-data/cube#sliceKey": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/observation-status",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 18
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/portland",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Portland taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Portland"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/humberside",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Humberside taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Humberside"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dataset",
+            "@type": [
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/department-for-transport"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base. The symbol \"[x]\" shows when a base is not operational. Portland base ceased operation on 30 June 2017. Numbers for each base represent the number of taskings."
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-06-20T00:00:00"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-06-20T00:00:00"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/department-for-transport"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Data on civilian search and rescue helicopter activity in the United Kingdom, produced by the Department for Transport."
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#keyword": [
+                {
+                    "@language": "en",
+                    "@value": "safety"
+                },
+                {
+                    "@language": "en",
+                    "@value": "helicopter"
+                },
+                {
+                    "@language": "en",
+                    "@value": "rescue"
+                },
+                {
+                    "@language": "en",
+                    "@value": "search"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#theme": [
+                {
+                    "@id": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/prestwick",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Prestwick taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Prestwick"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/stornoway",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/stornoway"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/stornoway"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 24
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/st-athan",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of St Athan taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "St Athan"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/humberside",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/humberside"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/humberside"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/stornoway",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Stornoway taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Stornoway"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/sumburgh",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/sumburgh"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/sumburgh"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 26
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/tasking-location-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dimension/tasking-location-type"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#component/lydd",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lydd"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/lydd"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 13
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/inverness",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Inverness taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Inverness"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#measure/newquay",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Number of Newquay taskings"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Newquay"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dependency/government-quarter",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://rdfs.org/ns/void#Dataset"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./government-quarter.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "government-quarter.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#dependency/tasking-location-type",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://rdfs.org/ns/void#Dataset"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./tasking-location-type.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "tasking-location-type.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#attribute/observation-status/x",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "x"
+                }
+            ]
+        },
+        {
+            "@id": "uk-civilian-search-and-rescue-helicopter-taskings-location-type-by-base.csv#unit/number",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "number"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,192 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base",
+    "description": "UK Civilian Search and Rescue Helicopter Taskings - Location type by Base. The symbol \"[x]\" shows when a base is not operational. Portland base ceased operation on 30 June 2017. Numbers for each base represent the number of taskings.",
+    "creator": "https://www.gov.uk/government/organisations/department-for-transport",
+    "publisher": "https://www.gov.uk/government/organisations/department-for-transport",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "summary": "Data on civilian search and rescue helicopter activity in the United Kingdom, produced by the Department for Transport.",
+    "public_contact_point_uri": "mailto:SARH.stats@dft.gov.uk",
+    "dataset_issued": "2023-06-20T00:00:00Z",
+    "themes": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes",
+    "keywords": 
+    [
+        "rescue", 
+        "helicopter", 
+        "safety",
+        "rescue", 
+        "search"
+    ],
+    "columns": {
+      "Year": false,
+      "Quarter": false,
+      "Period": {
+        "from_template": "government-quarter"
+      },
+      "Tasking Location Type": {
+        "type": "dimension"
+      },
+      "Caernarfon": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Caernarfon",
+          "description": "Number of Caernarfon taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Humberside": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Humberside",
+          "description": "Number of Humberside taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Inverness": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Inverness",
+          "description": "Number of Inverness taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Lee On Solent": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Lee On Solent",
+          "description": "Number of Lee On Solent taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Lydd": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Lydd",
+          "description": "Number of Lydd taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Newquay": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Newquay",
+          "description": "Number of Newquay taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Portland": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Portland",
+          "description": "Number of Portland taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Prestwick": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Prestwick",
+          "description": "Number of Prestwick taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "St Athan": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "St Athan",
+          "description": "Number of St Athan taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Stornoway": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Stornoway",
+          "description": "Number of Stornoway taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Sumburgh": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Sumburgh",
+          "description": "Number of Sumburgh taskings",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Total": {
+        "type": "observations",
+        "data_type": "integer",
+        "measure": {
+          "label": "Total",
+          "description": "Total number of taskings in all bases",
+          "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+        },
+        "unit": {
+          "label": "number",
+          "from_existing": "http://qudt.org/vocab/unit/NUM"
+        }
+      },
+      "Portland-obsStatus": {
+        "from_template": "observation-status",
+        "describes_observations": "Portland"
+      },
+      "Revisions": false
+    }
+  }
+  
